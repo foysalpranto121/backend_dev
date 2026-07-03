@@ -33,3 +33,34 @@ part3=(sub_part6+sub_part7)/2
 ##final answer
 ans=part1+part2-part3
 print("The answer is: ",ans)
+
+
+### conditional statements in python
+if a>b:
+    print("a is greater than b")
+elif a<b:
+    print("a is less than b")
+else:
+    print("a is equal to b")
+
+    ## grading system using conditional statements
+    ##
+    name=''
+    size=len(name)
+    phone_number=input("Enter your phone number: ")
+    size=len(phone_number)
+    email=input("Enter your email: ")
+    size=len(email)
+    
+    print("size of name is: ",size)
+    if size==0:
+        print("please enter your name")
+    
+    elif size!=11:
+        print("please enter your phone number")
+
+
+     
+    else:
+        print("Sucessfully registered")
+    
