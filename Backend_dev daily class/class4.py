@@ -20,3 +20,8 @@ print(list2[-1])
 print(list2[2:4])
 print(list2[:4])
 print(list2[2:])
+
+## change items 
+list2[2]="pranto"
+print(list2) 
+
