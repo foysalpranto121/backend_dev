@@ -25,3 +25,42 @@ print(list2[2:])
 list2[2]="pranto"
 print(list2) 
 
+## python add list 
+list2.append("foysal")
+print(list2)
+
+## python insert list 
+list2.insert(2,"ahmed")
+print(list2)
+
+## extend list 
+list3=["pranto","foysal"]
+list2.extend(list3)
+print(list2)
+
+## python remove list 
+list2.remove("foysal")
+print(list2)
+
+## python pop list 
+list2.pop(2)
+print(list2)
+
+## python clear list 
+list2.clear()
+print(list2)
+
+## del list 
+del list2[2]
+print(list2)
+## rever set list 
+list2.reverse()
+print(list2)
+
+## sort list 
+list2.sort()
+print(list2)
+
+## copy list 
+list4=list2.copy()
+print(list4)
