@@ -1,4 +1,4 @@
-## list and for loop 
+## list  class 4
 list1=["kasem","hasem","rahim","jhon","ahmed"]
 print(list1)
 ## list changeabke--->> 
