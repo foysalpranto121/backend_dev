@@ -27,6 +27,21 @@ else:
 
 
 # function
+a = [1, 2, 3, 4, 6, 8, 12, 33, 41, 44, 100]
+item = 12
 
+left = 0
+right = len(a) - 1
 
+while left <= right:
+    middle = (left + right) // 2
 
+    if a[middle] == item:
+        print("Item found at index", middle)
+        break
+    elif a[middle] < item:
+        left = middle + 1
+    else:
+        right = middle - 1
+else:
+    print("Item not found")
