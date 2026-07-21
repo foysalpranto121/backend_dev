@@ -10,3 +10,9 @@ print(book_self)
 print(total_row)
 print(total_column)
 print(book_self[1][1])
+ ## nested loop 
+for i in range(total_row):
+    for j in range(total_column):
+        print(book_self[i][j])
+
+        
