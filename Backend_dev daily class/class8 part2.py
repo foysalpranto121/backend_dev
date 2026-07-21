@@ -11,3 +11,7 @@ else:
     print(img.shape)
     print(len(img[0]))
 
+    resize_image = cv2.resize(img, (500, 500), interpolation=cv2.INTER_AREA)
+    cv2.imshow("My picture", resize_image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
