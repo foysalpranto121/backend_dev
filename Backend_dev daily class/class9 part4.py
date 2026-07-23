@@ -1,8 +1,12 @@
 import tkinter as tk
-from tkinter import ttk
+from tkinter import ttk, messagebox
 root = tk.Tk()
 root.title("Product Entry")
 root.geometry("700x450")
+
+
+def add_product():
+    messagebox.showinfo("Success", "Product added successfully")
 
 tk.Label(root, text="Product Name").grid(row=0, column=0)
 
@@ -26,7 +30,7 @@ entry_category = tk.Entry(root)
 
 entry_category.grid(row=3, column=1)
 
-tk.Button(root, text="Add Product").grid(row=4, column=0)
+tk.Button(root, text="Add Product",command=add_product).grid(row=4, column=0)
 
 tk.Button(root, text="Export").grid(row=4, column=1)
 
@@ -41,3 +45,5 @@ tree.grid(row=5, column=0, columnspan=4, pady=20)
 root.configure(bg="lightblue")
 
 root.mainloop()
+
+
