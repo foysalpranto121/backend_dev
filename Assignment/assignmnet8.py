@@ -8,7 +8,7 @@ products = [
 min_price = int(input("Minimum Price: "))
 max_price = int(input("Maximum Price: "))
 status = input("Availability: ")
-
+## linear search 
 for product in products:    
     if (min_price <= product["price"] <= max_price) and (product["status"] == status):
 
